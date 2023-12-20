@@ -1,0 +1,61 @@
+<div style="display: flex;">
+    <form id="add" style="flex: 1;">
+        <h3>Agregar producto:</h3>
+
+            <div>
+                <label>Nombre:</label>
+                <input type="text" id="title" />
+            </div>
+
+            <div>
+                <label>Descripcion:</label>
+                <textarea id="description"></textarea>
+            </div>
+
+            <div>
+                <label>Precio:</label>
+                <input type="text" id="price" />
+            </div>
+
+            <div>
+                <label>Img:</label>
+                <input type="text" id="thumbnail" />
+            </div>
+
+            <div>
+                <label>Code:</label>
+                <input type="text" id="code" />
+            </div>
+
+            <div>
+                <label>Stock:</label>
+                <input type="text" id="stock" />
+            </div>
+
+        <button id="addProductBtn">Add Product</button>
+    </form>
+
+    <form id="delete" style="flex: 1; margin-left: 20px;">
+        <h3>Eliminar producto:</h3>
+        <label>Product ID:</label>
+        <input type="text" id="productId" />
+        <button id="deleteProductBtn">Delete Product</button>
+    </form>
+</div>
+
+<div class="productContainer">
+    {{#each products}}
+    <div class="productCard">
+        <div class="productCard_img">
+            <img src="{{this.img}}" alt="{{this.nombre}}">
+        </div>
+        <div class="productCard_info">
+            <h3>{{this.nombre}}</h3>
+            <p>{{this.descripcion}}</p>
+            <p>{{this.code}}</p>
+            <p>{{this.precio}}</p>
+            <p>{{this.stock}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

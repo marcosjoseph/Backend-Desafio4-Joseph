@@ -1,0 +1,17 @@
+.productContainer {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1rem;
+    
+}
+
+.productCard{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding:1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height:100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
