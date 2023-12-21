@@ -2,7 +2,7 @@
     {{#each products}}
     <div class="productCard">
         <div class="productCard_img">
-            <img src="{{this.img}}" alt="{{this.nombre}}">
+            <img src="{{this.img}}" alt="{{this.nombre}}"/>
         </div>
         <div class="productCard_info">
             <h3>{{this.nombre}}</h3>
@@ -10,6 +10,7 @@
             <p>{{this.code}}</p>
             <p>{{this.precio}}</p>
             <p>{{this.stock}}</p>
+            <p>{{this.id}}</p>
         </div>
     </div>
     {{/each}}
