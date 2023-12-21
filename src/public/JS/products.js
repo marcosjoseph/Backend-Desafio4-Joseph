@@ -30,5 +30,7 @@ deleteProductBtn.addEventListener("click", () => {
     alert(`El producto id: ${id}, fue eliminado`)
 })
 
-// socket.on("updateProducts", (products))
+socket.on("updateProducts", (products) => {
+    window.location.reload();
+})
 
